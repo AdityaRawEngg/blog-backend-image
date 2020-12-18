@@ -20,9 +20,6 @@ mongoose.connect(
       return console.log("Error while connecting");
     }
     app.use("/blogs", blogRoute);
-    // app.post("/", (req, resp) => {
-
-    // });
     app.listen(process.env.PORT, () => {
       console.log(`Server started on Port ${PORT}`);
     });
