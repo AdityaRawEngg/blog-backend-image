@@ -17,8 +17,38 @@ It takes POST and a GET request
 
 " /blogs/blog/:blogId " --> replace ":blogId" with actual blog Id
 
-It tasks a GET, PUT and DELETE request
+It takes a GET, PUT and DELETE request
 
 " /blogs/image/:blogId " --> replace ":blogId" with actual blog Id
 
 It takes a PUT request to update Banner Image
+
+
+## Blog structure
+### Create
+<p>/blogs/blog</p>
+can be used to create a blog one needs to provide it with:
+<ul>
+  <li>blogTitle</li>
+  <li>blogAuthor</li>
+  <li>blogImage</li>
+  <li>blogContent</li>
+</ul>
+<p>User can also provide single or multiple relatedLinks. (Multiple relatedLinks should be seperated by comma)</p>
+
+### Update by Id 
+#### Update blog Data
+<p>/blogs/blog/:blogId</p>
+Can be used to update blog data:
+<ul>
+  <li>blogTitle</li>
+  <li>blogAuthor</li>
+  <li>blogImage</li>
+  <li>blogContent</li>
+  <li>Single or Multiple relatedLinks. (Multiple relatedLinks should be seperated by comma)</li>
+</ul>
+User cannot update blogId and imageUrl
+
+#### Update Blog Image
+<p>/blogs/image/:blogId</p>
+Can be used to update blogImage
