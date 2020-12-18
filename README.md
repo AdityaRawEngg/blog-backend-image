@@ -11,11 +11,14 @@
 
 ## Server End points
 
-<p> " /blogs/blog " </p>
+" /blogs/blog " 
+
 It takes POST and a GET request
 
-<p> " /blogs/blog/:blogId " --> replace ":blogId" with actual blog Id </p>
+" /blogs/blog/:blogId " --> replace ":blogId" with actual blog Id
+
 It tasks a GET, PUT and DELETE request
 
-<p> " /blogs/image/:blogId " --> replace ":blogId" with actual blog Id  </p>
+" /blogs/image/:blogId " --> replace ":blogId" with actual blog Id
+
 It takes a PUT request to update Banner Image
