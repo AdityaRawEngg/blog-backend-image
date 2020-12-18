@@ -2,7 +2,7 @@
 
 ## Installation
 
-1. git clone
+1. Open terminal and run "git clone https://github.com/AdityaRawEngg/blog-backend-image.git"
 2. cd blog-backend-image
 3. open terminal and run " npm install"
 4. rename sample-config.env to config.env
