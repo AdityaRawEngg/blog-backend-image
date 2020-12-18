@@ -19,6 +19,9 @@ mongoose.connect(
     if (err) {
       return console.log("Error while connecting");
     }
+    app.get("/", (req, resp) => {
+      resp.send("This is home page");
+    });
     app.use("/blogs", blogRoute);
     app.listen(process.env.PORT, () => {
       console.log(`Server started on Port ${PORT}`);
